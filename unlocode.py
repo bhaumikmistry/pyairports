@@ -69,7 +69,7 @@ def read_locode_csv(path):
 
             if iata:
                 if iata != locode_location:
-                    print 'iata {} != locode {}. Using {}'.format(iata, locode_location, iata)
+                    print('iata {} != locode {}. Using {}'.format(iata, locode_location, iata))
             if is_port(func):
                 yield dict(
                     country=locode_country,
